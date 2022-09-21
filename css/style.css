@@ -50,8 +50,10 @@ body {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
 
-    /* outline: 1px solid tomato; */
+.section {
+    padding: 94px 0;
 }
 
 /* -HEADER- */
@@ -135,12 +137,9 @@ body {
 
 /* BANNER */
 
-.main-banner {
-    margin-bottom: 94px;
-    padding: 200px 0;
-}
-
 .banner {
+    padding: 200px 0;
+
     background-color: var(--banner-bg);
 }
 
@@ -198,10 +197,6 @@ body {
     overflow: hidden;
 }
 
-.main-features {
-    margin-bottom: 94px;
-}
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -232,8 +227,8 @@ body {
 
 /* WEDOIT */
 
-.wedoit-main {
-    margin-bottom: 94px;
+.wedoit {
+    padding-bottom: 94px;
 }
 
 .wedoit-title {
@@ -252,9 +247,15 @@ body {
     margin: 15px;
 }
 
+.wedoit-pic {
+    display: block;
+}
+
 /* TEAM */
 
 .team {
+text-align: center;
+
     background-color: var(--button-bg);
 }
 
@@ -269,6 +270,12 @@ body {
 
 .team-pic {
     margin-bottom: 30px;
+
+    display: block;
+}
+
+.team-info {
+    padding-bottom: 30px;
 }
 
 .team-title {
@@ -283,7 +290,6 @@ body {
 .team-text {
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 30px;
     
     font-size: 16px;
     line-height: 1.19;
@@ -306,28 +312,21 @@ body {
 
 /* FOOTER */
 
-.main-footer {
-    padding: 60px 0;
-}
-
 .footer {
     background-color: var(--banner-bg);
+    padding: 60px 0;
 }
 
 .footer-logo {
     display: block;
     margin-bottom: 20px;
-    width: 231px;
+
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--hover-blue);
-}
-
-.footer-address {
-    width: 231px;
 }
 
 .footer-logo-link {  
@@ -367,10 +366,6 @@ body {
 
 /* PORTFOLIOFILTERS */
 
-.main-filters {
-    padding: 94px 0;
-}
-
 .filters-btn {
     background-color: var(--button-bg);
     border-radius: 4px;
@@ -394,7 +389,7 @@ body {
 .filters-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 
@@ -415,6 +410,10 @@ body {
 
 /* PORTFOLIOPROJECTS */
 
+.header-bottomline {
+    border-bottom: 1px solid var(--projects-border);
+}
+
 .projects-list {
     display: flex;
     flex-wrap: wrap;
@@ -423,17 +422,22 @@ body {
 
 .projects-list .item {
     margin: 15px;
-    border: 1px solid var(--projects-border);
+}
+
+.projects-info {
+    padding: 20px 24px;
+    border-left: 1px solid var(--projects-border);
+    border-bottom: 1px solid var(--projects-border);
+    border-right: 1px solid var(--projects-border);
 }
 
 .projects-pic {
-    margin-bottom: 20px;
+    display: block;
 }
 
 .projects-title {
     margin-top: 0;
     margin-bottom: 4px;
-    padding: 0 24px;
 
     font-size: 18px;
     line-height: 2;
@@ -441,9 +445,7 @@ body {
 }
 
  .projects-text {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding: 0 24px;
+    margin: 0;
 
     font-size: 16px;
     line-height: 1.88;
