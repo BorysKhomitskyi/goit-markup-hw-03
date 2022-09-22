@@ -38,6 +38,9 @@ body {
 }
 
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -251,7 +254,7 @@ body {
 /* TEAM */
 
 .team {
-text-align: center;
+    text-align: center;
 
     background-color: var(--button-bg);
 }
@@ -266,13 +269,11 @@ text-align: center;
 }
 
 .team-pic {
-    margin-bottom: 30px;
-
     display: block;
 }
 
 .team-info {
-    padding-bottom: 30px;
+    padding: 30px 0;
 }
 
 .team-title {
@@ -334,12 +335,16 @@ text-align: center;
     color: var(--title-white);
 }
 
+.footer-list .item + .item {
+    margin-top: 9px;
+}
+
 .footer-map {
     display: block;
     margin-bottom: 9px;
 
     font-style: normal;
-    line-height: 1.71;
+    line-height: 1.5;
     color: var(--title-white);
     text-decoration: none;
 }
@@ -348,12 +353,8 @@ text-align: center;
     display: block;
 
     font-style: normal;
-    line-height: 1.71;
+    line-height: 1.5;
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-list .phone {
-    margin-bottom: 9px;
 }
 
 .footer-contact:hover,
